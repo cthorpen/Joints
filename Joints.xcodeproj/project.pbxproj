@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		625F6B4828DD2A9C00C50EBC /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625F6B4728DD2A9C00C50EBC /* LocationDetailsView.swift */; };
+		629448D728E517520089ABB3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629448D628E517520089ABB3 /* LocationManager.swift */; };
 		62C5AD8428DBD593003D3735 /* JointsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5AD8328DBD593003D3735 /* JointsApp.swift */; };
 		62C5AD8628DBD593003D3735 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5AD8528DBD593003D3735 /* ContentView.swift */; };
 		62C5AD8828DBD596003D3735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C5AD8728DBD596003D3735 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		625F6B4728DD2A9C00C50EBC /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
+		629448D628E517520089ABB3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		629448D828E51D0F0089ABB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		62C5AD8028DBD593003D3735 /* Joints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C5AD8328DBD593003D3735 /* JointsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointsApp.swift; sourceTree = "<group>"; };
 		62C5AD8528DBD593003D3735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,10 +58,12 @@
 		62C5AD8228DBD593003D3735 /* Joints */ = {
 			isa = PBXGroup;
 			children = (
+				629448D828E51D0F0089ABB3 /* Info.plist */,
 				62C5AD8328DBD593003D3735 /* JointsApp.swift */,
 				62C5AD8528DBD593003D3735 /* ContentView.swift */,
 				62C5AD9128DBD7AD003D3735 /* MapView.swift */,
 				625F6B4728DD2A9C00C50EBC /* LocationDetailsView.swift */,
+				629448D628E517520089ABB3 /* LocationManager.swift */,
 				62C5AD8728DBD596003D3735 /* Assets.xcassets */,
 				62C5AD8928DBD596003D3735 /* Preview Content */,
 			);
@@ -145,6 +150,7 @@
 			files = (
 				62C5AD8628DBD593003D3735 /* ContentView.swift in Sources */,
 				62C5AD9228DBD7AD003D3735 /* MapView.swift in Sources */,
+				629448D728E517520089ABB3 /* LocationManager.swift in Sources */,
 				625F6B4828DD2A9C00C50EBC /* LocationDetailsView.swift in Sources */,
 				62C5AD8428DBD593003D3735 /* JointsApp.swift in Sources */,
 			);
@@ -280,6 +286,8 @@
 				DEVELOPMENT_TEAM = 8DHBFP634R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Joints/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Joints requires access to your location to show your Joints on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +317,8 @@
 				DEVELOPMENT_TEAM = 8DHBFP634R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Joints/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Joints requires access to your location to show your Joints on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

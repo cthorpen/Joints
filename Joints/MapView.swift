@@ -16,7 +16,7 @@ struct Location: Identifiable {
 }
 
 struct MapView: View {
-    
+        
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 47.606, longitude: -122.332), span: MKCoordinateSpan(latitudeDelta: 0.3, longitudeDelta: 0.3))
     
     @State private var showLocationDetailsView = false
@@ -43,6 +43,7 @@ struct MapView: View {
             .sheet(isPresented: $showLocationDetailsView) {
                 LocationDetailsView()
             }
+            .onAppear(perform: LocationManager.shared.requestLocationAuthorization) // ask for user location
 //            .navigationTitle("Joints Explorer")
         }
     }

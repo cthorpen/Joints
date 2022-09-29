@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var locationManager = LocationManager()
     var body: some View {
         VStack {
             MapView()
                 .cornerRadius(15)
                 .padding()
-        }
-        
+        }        
     }
 }
 
